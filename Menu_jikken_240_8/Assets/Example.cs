@@ -27,7 +27,7 @@ public class Example : MonoBehaviour
     public float enter_time_paper;
     public static bool flag_enter;
     public static bool flag_enter_stay;
-    public bool flag_count_all;
+    public static bool flag_count_all;
 
     int count_error;
 
@@ -136,6 +136,7 @@ public class Example : MonoBehaviour
                 Cursor_Test.flag_Reset = false;
                 flag_count_all = true;
                 Cursor_Test.time_start = Time.fixedTime;
+                Cursor_Test.start.SetActive(false);
             }
         }
 
@@ -175,35 +176,11 @@ public class Example : MonoBehaviour
                 sw.Close();
                 count_error = 0;
 
-                if (Cursor_Test.flag_Even)
+                Cursor_Test.start.SetActive(true);
+                Cursor_Test.start.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
+                for (int i = 0; i < Cursor_Test.degree_max / Cursor_Test.degree; i++)
                 {
-                    GameObject.Find(Cursor_Test.start_name).transform.localPosition = new Vector3(0.0f, 0.0f, -0.000001f);
-                    GameObject.Find(Cursor_Test.start_name).GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
-                    for (int i = 0; i < Cursor_Test.degree_max / Cursor_Test.degree; i++)
-                    {
-                        if (i == int.Parse(Cursor_Test.sub_start_name_1) || i == int.Parse(Cursor_Test.sub_start_name_2))
-                        {
-                            GameObject.Find(i.ToString()).GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
-                        }
-                        else
-                        {
-                            GameObject.Find(i.ToString()).GetComponent<Renderer>().material.SetColor("_Color", Color.black);
-                        }
-                    }
-                }
-                else if (!Cursor_Test.flag_Even)
-                {
-                    for (int i = 0; i < Cursor_Test.degree_max / Cursor_Test.degree; i++)
-                    {
-                        if (i == int.Parse(Cursor_Test.start_name))
-                        {
-                            GameObject.Find(i.ToString()).GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
-                        }
-                        else
-                        {
-                            GameObject.Find(i.ToString()).GetComponent<Renderer>().material.SetColor("_Color", Color.black);
-                        }
-                    }
+                    GameObject.Find(i.ToString()).GetComponent<Renderer>().material.SetColor("_Color", Color.black);
                 }
                 Cursor_Test.now_num = (int)(Cursor_Test.degree_max / Cursor_Test.degree);
             }

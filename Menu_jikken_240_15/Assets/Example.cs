@@ -31,7 +31,7 @@ public class Example : MonoBehaviour
 
     int count_error;
 
-    public string path = @"D:\Menu_jikken_9\Data\Data01.csv";
+    public string path = @"D:\Menu_jikken\Menu_jikken\Menu_jikken_240_15\Data\Data01.csv";
 
     void Start()
     {

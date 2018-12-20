@@ -130,7 +130,7 @@ public class Cursor_Test : MonoBehaviour {
                 if (is_L)
                 {
                     //左手の場合
-                    Copy_Mesh(i, new Vector3(0.0f, 0.0f, 0.0f), new Vector3(180.0f, 0.0f, degree * (-i - 1) + 150.0f));
+                    Copy_Mesh(i, new Vector3(0.0f, 0.0f, 0.0f), new Vector3(180.0f, 0.0f, degree * (-i - 1) + 140.0f));
                 }
                 else if (is_R)
                 {
@@ -152,7 +152,7 @@ public class Cursor_Test : MonoBehaviour {
             start.transform.localPosition = new Vector3(0.0f, 0.0f, -0.000001f);
             if (is_L)
             {
-                start.transform.localRotation = Quaternion.Euler(180.0f, 0.0f, 25.0f);
+                start.transform.localRotation = Quaternion.Euler(180.0f, 0.0f, 15.0f);
             }
             else if (is_R)
             {

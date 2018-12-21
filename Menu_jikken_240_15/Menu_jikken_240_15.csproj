@@ -279,6 +279,8 @@
     <Compile Include="Assets\Test_Scripts\Hit.cs" />
     <Compile Include="Assets\Test_Scripts\Mesh_Cursor.cs" />
     <Compile Include="Assets\Test_Scripts\Mesh_Degree.cs" />
+    <Compile Include="Assets\Test_Scripts\Mesh_Start.cs" />
+    <Compile Include="Assets\Test_Scripts\Rest_Time.cs" />
     <Compile Include="Assets\Test_Scripts\Rock_Or_Paper_L.cs" />
     <Compile Include="Assets\Test_Scripts\Rock_Or_Paper_R.cs" />
   </ItemGroup>

@@ -31,14 +31,13 @@ public class Follow_Rotation_Z : MonoBehaviour {
         {
             //左手の場合
             this.gameObject.transform.rotation = Quaternion.Euler(180.0f, 0.0f, (obj.transform.localEulerAngles.z - 90.0f));
-
-            if (this.gameObject.transform.rotation.eulerAngles.z > 270.0f && this.gameObject.transform.rotation.eulerAngles.z < 315.0f)
+            if (this.gameObject.transform.rotation.eulerAngles.z > 230.0f && this.gameObject.transform.rotation.eulerAngles.z < 290.0f)
             {
-                this.gameObject.transform.rotation = Quaternion.Euler(180.0f, 0.0f, 89.0f);
+                this.gameObject.transform.rotation = Quaternion.Euler(180.0f, 0.0f, 49.0f);
             }
-            else if (this.gameObject.transform.rotation.eulerAngles.z > 315.0f && this.gameObject.transform.rotation.eulerAngles.z < 360.0f)
+            else if (this.gameObject.transform.rotation.eulerAngles.z > 290.0f && this.gameObject.transform.rotation.eulerAngles.z < 350.0f)
             {
-                this.gameObject.transform.rotation = Quaternion.Euler(180.0f, 0.0f, 180.0f);
+                this.gameObject.transform.rotation = Quaternion.Euler(180.0f, 0.0f, 170.0f);
             }
             else
             {

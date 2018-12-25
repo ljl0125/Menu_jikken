@@ -26,7 +26,7 @@ public class Rest_Time : MonoBehaviour {
                 this.gameObject.GetComponent<TextMesh>().text = "休憩時間残り：" + (rest_time - (Time.fixedTime - Cursor_Test.rest_time_start)).ToString("f0") + "秒";
             }
 
-            if (Time.fixedTime - Cursor_Test.rest_time_start >= rest_time)
+            if (Time.fixedTime - Cursor_Test.rest_time_start >= rest_time || Input.GetKeyUp(KeyCode.Space))
             {
                 Mesh_Parent.SetActive(true);
                 this.gameObject.SetActive(false);

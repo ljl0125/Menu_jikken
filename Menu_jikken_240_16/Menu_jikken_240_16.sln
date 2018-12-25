@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu_jikken_240_16", "Menu_jikken_240_16.csproj", "{685A2B12-B654-2352-DE42-B6367EDA3D7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu_jikken_240_16", "Menu_jikken_240_16.csproj", "{225E878E-82A5-C799-B191-C342C789B534}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu_jikken_240_16.Editor", "Menu_jikken_240_16.Editor.csproj", "{B87595F6-CE82-0155-694E-1B55B52F660B}"
 EndProject
@@ -13,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{685A2B12-B654-2352-DE42-B6367EDA3D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{685A2B12-B654-2352-DE42-B6367EDA3D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{685A2B12-B654-2352-DE42-B6367EDA3D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{685A2B12-B654-2352-DE42-B6367EDA3D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225E878E-82A5-C799-B191-C342C789B534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225E878E-82A5-C799-B191-C342C789B534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225E878E-82A5-C799-B191-C342C789B534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225E878E-82A5-C799-B191-C342C789B534}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B87595F6-CE82-0155-694E-1B55B52F660B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B87595F6-CE82-0155-694E-1B55B52F660B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B87595F6-CE82-0155-694E-1B55B52F660B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -24,8 +22,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CAD80E33-130B-4354-9C40-C8083D6D0C67}
 	EndGlobalSection
 EndGlobal
